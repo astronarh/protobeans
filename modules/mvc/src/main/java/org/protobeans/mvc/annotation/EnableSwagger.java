@@ -20,4 +20,6 @@ public @interface EnableSwagger {
     Info info() default @Info(title = "", version = "");
     
     Tag[] tags() default @Tag(name = "default");
+
+    String baseUrl() default "";
 }
